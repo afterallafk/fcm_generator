@@ -1,0 +1,22 @@
+<compatibility-matrix>
+    <hal format="hidl" optional="true">
+       <name>android.hardware.cas</name>
+        <version>1.0-2</version>
+        <interface>
+           <name>IMediaCasService</name>
+           <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl" optional="true">
+       <name>android.hardware.drm</name>
+        <version>1.0-3</version>
+        <interface>
+           <name>ICryptoFactory</name>
+           <instance>widevine</instance>
+        </interface>
+        <interface>
+           <name>IDrmFactory</name>
+           <instance>widevine</instance>
+        </interface>
+    </hal>
+</compatibility-matrix>
