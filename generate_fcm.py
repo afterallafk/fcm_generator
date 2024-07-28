@@ -118,7 +118,12 @@ def main():
 
     fcms = [entry.format() for entry in entries.values()]
 
-    print("".join(fcms))
+    with open("framework_compatibility_matrix.xml", "w") as output_file:
+        output_file.write("<compatibility-matrix>\n")
+        output_file.write("".join(fcms))
+        output_file.write("</compatibility-matrix>\n")
+
+    logging.info("Output written to framework_compatibility_matrix.xml")
 
     return
 
